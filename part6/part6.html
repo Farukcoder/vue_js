@@ -17,8 +17,13 @@
 
     <div id="app">
         <h2>Count: {{count}}</h2>
-        <button @click="count = count+1">Increment</button>
-        <button @click="decrement">Decrement</button>
+        <button @click="increment(1)">Increment 1</button>
+        <button @click="decrement(1)">Decrement 1</button>
+        <br>
+        <button @click="increment(2)">Increment 2 </button>
+        <button @click="decrement(2)">Decrement 2</button>
+        <hr>
+        <button @click="test($event, 1)">Test</button>
     </div>
 
     <script src="app.js"></script>

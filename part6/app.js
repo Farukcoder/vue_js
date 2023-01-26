@@ -1,4 +1,4 @@
-var app = Vue.createApp({
+const app = Vue.createApp({
     data() {
         return {
             count: 0
@@ -6,11 +6,15 @@ var app = Vue.createApp({
     },
 
     methods: {
-        increment() {
-            this.count++
+        increment(per) {
+            this.count = this.count + per;
         },
-        decrement() {
-            this.count--
+        decrement(per) {
+            this.count = this.count - per;
+        },
+        test(evt, ev) {
+            console.log(ev);
+            console.log(evt);
         }
     }
 });
