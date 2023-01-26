@@ -16,12 +16,23 @@
     </header>
 
     <div id="app">
-        <h2>Enter Your Name</h2>
-        <input type="text" @keyup.enter="hendelKeyup">
-        <p>welcome - {{name}} !</p>
+        <form @submit.prevent="handelFormSubmit">
+            <h2>Enter Your Name</h2>
+            <input type="text" @keyup.enter="hendelKeyup">
+            <p>welcome - {{name}} !</p>
+            <button type="submit">ok</button>
+        </form>
+        <hr>
+        <br>
+        <div class="card" @click="handelCardClick">
+            <button @click.stop="handelViewClick">view</button>
+        </div>
+
     </div>
 
     <script src="app.js"></script>
 </body>
 
 </html>
+
+// event @submit,@click // modifire @submit.prevent,@click.right,@click.stop
