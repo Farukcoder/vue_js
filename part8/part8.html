@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.global.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2> Vue Js 3 Bangla Tutorial</h2>
+        <h3> two a binding </h3>
+        <p> two a binding means event binding and method binding ar same </p>
+    </header>
+
+    <div id="app">
+        <h3>Enter a number</h3>
+        <input v-model.number="num" type="text">
+        <br>
+        <button @click="getDobule">get dobul</button>
+        <button @click="getSqure">get square</button>
+        <button @click="add10">add 10</button>
+
+        <button @click="reset">reset</button>
+        <hr>
+        <label for="">Enter a number: </label>{{num}}
+        <br>
+        <label for="">result: </label>{{result}}
+        <hr>
+        <span>v-modle: modifire</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
